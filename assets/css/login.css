@@ -1,0 +1,113 @@
+/* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  font-family: "inter" !important;
+  transition: all 0.3s ease;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  width: 100%;
+}
+
+.auth-container {
+  background-color: #222;
+  color: white !important;
+  width: 500px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  padding: 0 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: -webkit-fill-available !important;
+  padding: 10px 20px;
+  margin-top: 10px;
+  color: white;
+  border-radius: 5px;
+  background-color: #111;
+  outline: none;
+  border: 1px solid #444;
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+
+button {
+  padding: 12px;
+  background-color: #575757;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+#formMessage {
+  text-align: center;
+  margin-top: 10px;
+  color: #007bff;
+}
+
+.register {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+.signup-links {
+  width: -webkit-fill-available !important;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .auth-container {
+    padding: 20px;
+    max-width: 100%;
+  }
+}

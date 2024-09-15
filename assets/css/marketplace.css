@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+p {
+  color: #cccccc;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #f0f0f0;
+}
+
+form input,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #333;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 12px;
+  background-color: #2c2b2b;
+  color: white !important;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all ease 0.5s;
+}
+
+.btn:hover {
+  background-color: #666;
+}
+
+.contract-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.contract {
+  background-color: #333;
+  padding: 20px;
+  border: 1px solid #444;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  color: #e0e0e0;
+}
+
+.contract h2 {
+  color: #f0f0f0;
+  margin-bottom: 10px;
+}
+
+.contract p {
+  color: #cccccc;
+  margin-bottom: 8px;
+}
+
+.contract button {
+  background-color: #555;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contract button:hover {
+  background-color: #777;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  
+  .contract {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  form input,
+  form button {
+    padding: 8px;
+  }
+
+  .contract {
+    padding: 10px;
+  }
+}
